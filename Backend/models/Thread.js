@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// messageSchema needed cuz role is different & time is diff 
 const MessageSchema = new mongoose.Schema({
     role: {
         type:String,
@@ -37,4 +38,4 @@ const ThreadSchema = new mongoose.Schema({
     }
 });
 
-export default mongoose.model("Thread", "ThreadSchema");
+export default mongoose.model("Thread", ThreadSchema);

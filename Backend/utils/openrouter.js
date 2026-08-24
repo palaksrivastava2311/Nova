@@ -1,6 +1,6 @@
 import "dotenv/config";
 
-const getOpenAIAPIResponse = async(message)=>{
+const getOpenRouterAPIResponse = async(message)=>{
     const options = {
         method: "POST",
         headers: {
@@ -25,4 +25,4 @@ const getOpenAIAPIResponse = async(message)=>{
       }
 };
 
-export default getOpenAIAPIResponse;
+export default getOpenRouterAPIResponse;
